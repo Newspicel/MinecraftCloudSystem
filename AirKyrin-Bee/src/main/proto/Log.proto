@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_package = "net.kyrin.air.bee";
+option java_multiple_files = true;
+
+message Log {
+    string uuid = 1;
+    string beeUUID = 2;
+    string message = 3;
+    int64 time = 4;
+}
+
+message LogAnswer {}
+
+service LogService {
+    rpc sendLogMessage(Log) returns (LogAnswer) {};
+}

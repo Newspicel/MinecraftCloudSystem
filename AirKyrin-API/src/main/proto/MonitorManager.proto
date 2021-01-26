@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+option java_package = "net.kyrin.air.api.hive";
+option java_multiple_files = true;
+
+message PlayerJoinEvent{
+    string uuid = 1;
+    string serveruuid = 2;
+}
+
+message PlayerJoinEventAnswer{
+    string onlineUUID = 1;
+}
+
+message PlayerDisconnectEvent{
+    string uuid = 1;
+    string serveruuid = 2;
+}
+
+message PlayerDisconnectEventAnswer{}
+
+message ServerSwitchToIngameEvent{
+    string serveruuid = 1;
+}
+
+message ServerSwitchToIngameEventAnswer{}
+
+message RegisterServer{
+    string serveruuid = 1;
+}
+
+message RegisterServerAnswer{}
+
+service MonitorManager{
+    rpc sendPlayerJoinEvent(PlayerJoinEvent) returns (PlayerJoinEventAnswer) {}
+    rpc sendPlayerDisconnectEvent(PlayerDisconnectEvent) returns (PlayerDisconnectEventAnswer) {}
+    rpc sendServerSwitchToIngameEvent(ServerSwitchToIngameEvent) returns (ServerSwitchToIngameEventAnswer) {}
+    rpc setupServer(RegisterServer) returns (RegisterServerAnswer){}
+}

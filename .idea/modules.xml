@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AirKyrin.iml" filepath="$PROJECT_DIR$/AirKyrin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AirKyrin-API/AirKyrin-API.iml" filepath="$PROJECT_DIR$/AirKyrin-API/AirKyrin-API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AirKyrin-Bee/AirKyrin-Bee.iml" filepath="$PROJECT_DIR$/AirKyrin-Bee/AirKyrin-Bee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AirKyrin-Hive/AirKyrin-Hive.iml" filepath="$PROJECT_DIR$/AirKyrin-Hive/AirKyrin-Hive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AirKyrin-Libary/AirKyrin-Libary.iml" filepath="$PROJECT_DIR$/AirKyrin-Libary/AirKyrin-Libary.iml" />
+    </modules>
+  </component>
+</project>

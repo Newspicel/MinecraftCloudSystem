@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_package = "net.kyrin.air.hive";
+option java_multiple_files = true;
+
+message Log {
+    string uuid = 1;
+    string beeuuid = 2;
+    string message = 3;
+    int64 time = 4;
+}
+
+message LogAnswer {}
+
+
+service LogService {
+    rpc sendLogMessage(Log) returns (LogAnswer) {};
+}

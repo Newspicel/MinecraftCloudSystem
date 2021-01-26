@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option java_package = "net.kyrin.air.bee";
+option java_multiple_files = true;
+
+import "Document.proto";
+
+message ServerStats{
+     int32 onlineServer = 1;
+     int32 freeRam = 2;
+     int32 realFreeRam = 3;
+}
+
+
+message Process{
+    string uuid = 1;
+    int32 needRam = 2;
+    Document serverConfig = 3;
+    Document document = 4;
+}
+
+service StatsService{
+    rpc sendStats (ServerStats) returns (Process) {}
+}

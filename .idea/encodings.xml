@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AirKyrin-API" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AirKyrin-API/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AirKyrin-API/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AirKyrin-Bee" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AirKyrin-Bee/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AirKyrin-Hive" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AirKyrin-Hive/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AirKyrin-Libary" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AirKyrin-Libary/src/main/java" charset="UTF-8" />
+  </component>
+</project>

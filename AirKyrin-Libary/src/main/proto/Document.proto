@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "net.kyrin.air.lib.document.models";
+option java_multiple_files = true;
+
+message Entry {
+     string key = 1;
+     string value = 2;
+}
+
+message Document {
+    repeated Entry entries = 1;
+}

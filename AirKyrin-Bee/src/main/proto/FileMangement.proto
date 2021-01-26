@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+option java_package = "net.kyrin.air.bee";
+option java_multiple_files = true;
+
+message File {
+    bool segment = 1;
+    int32 segment_id = 2;
+    bytes bytes = 3;
+}
+message Status {
+    int32 code = 1;
+}
+message Empty {}
+
+message Group {
+    string name = 1;
+    File content = 2;
+}
+message GroupRequest {
+    string name = 1;
+}
+message RequestAllGroups {
+
+}
+message AllGroups {
+    repeated string name = 1;
+}
+
+service GroupService {
+    rpc sendGroupFiles(GroupRequest) returns (Group) {}
+    rpc getAllGroupNames(RequestAllGroups) returns  (AllGroups) {}
+}
