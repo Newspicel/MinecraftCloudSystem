@@ -9,4 +9,4 @@ Techstack:
 - GRPC
 - RethinkDB
 
-Dieses Projekt muss vor dem verwenden noch fertig gestellt werden.
+This project must still be completed before use.
